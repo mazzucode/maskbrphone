@@ -7,6 +7,8 @@ Como tem sido uma necessidade reincidente em minhas aplicações, apesar de
 Javascript e jQuery não serem o meu forte, resolvi criar este plugin, seu
 funcionamento é bastante simples.
 
+Colaborações serão bem-vindas!
+
 Exemplos de utilização
 ======================
 
