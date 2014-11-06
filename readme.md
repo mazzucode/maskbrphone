@@ -9,8 +9,13 @@ funcionamento é bastante simples.
 
 Colaborações serão bem-vindas!
 
-Exemplos de utilização
-======================
+Quando digitado um número de 8 dígitos, ele é formatado para: DDDD-DDDD, por exemplo:
+3224-3100
+
+Já números de 9 dígitos são formatados para: D-DDDD-DDDD, por exemplo: 9-8600-5200
+
+Forma de utilização
+===================
 
 **HTML:**
 
