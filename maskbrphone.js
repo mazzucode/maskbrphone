@@ -1,3 +1,10 @@
+/**
+*  maskbrphone for jQuery, version 1.0.0
+*  (c) 2014 Márcio Simão
+*
+*  maskbrphone for jQuery is freely distributable under the terms of an MIT-style license.
+*  For details, see the web site: https://github.com/masimao/maskbrphone
+*/
 (function($) {
 
     $.fn.maskbrphone = function() {
