@@ -1,6 +1,6 @@
 /**
 *  maskbrphone for jQuery, version 1.0.0
-*  (c) 2014 Márcio Simão
+*  (c) 2014 Márcio Simão (https://github.com/masimao)
 *
 *  maskbrphone for jQuery is freely distributable under the terms of an MIT-style license.
 *  For details, see the web site: https://github.com/masimao/maskbrphone
@@ -28,17 +28,17 @@
                     .replace(/\D/g, '') // Remove tudo o que não for dígito
                     .substring(0, 9); // Limita a 9 caracteres;
 
-            var masked_phone;
+            var maskedPhone;
 
             if (fone.length <= 8) {
                 // Coloca hífen entre o quarto e o quinto dígitos
-                masked_phone = fone.replace(/(\d{4})(\d{1,4})/, '$1-$2');
+                maskedPhone = fone.replace(/(\d{4})(\d{1,4})/, '$1-$2');
             } else {
                 // Coloca hífen entre o primeiro e o segundo e o quinto e o sexto dígitos
-                masked_phone = fone.replace(/(\d{1})(\d{1,4})(\d{1,4})/, '$1-$2-$3');
+                maskedPhone = fone.replace(/(\d{1})(\d{1,4})(\d{1,4})/, '$1-$2-$3');
             }
 
-            return masked_phone;
+            return maskedPhone;
         };
 
         init();
