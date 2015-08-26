@@ -7,8 +7,16 @@
 */
 (function($) {
 
-    $.fn.maskbrphone = function() {
+    $.fn.maskbrphone = function(options) {
 
+    	var defaults = {
+    		dddParenthesis : true,
+            dddSeparator : '',
+            numberSeparator : '-'
+        };
+
+        var settings = $.extend( {}, defaults, options );
+    	
         var plugin = this;
 
         var init = function() {
@@ -32,10 +40,21 @@
             
             if (fone.length <= 9) {
                 // Coloca hífen quando o número NÃO possui DDD
-                maskedPhone = fone.replace(/(\d{4}|\d{5})(\d{1,4})$/g, '$1-$2');
+                maskedPhone = fone.replace(/(\d{4}|\d{5})(\d{1,4})$/g, '$1' + settings.numberSeparator + '$2');
         	} else {
+        		var replacement = '';
+        		if (settings.dddParenthesis) {
+        			replacement += '($1)'
+        		} else {
+        			replacement += '$1'
+        		}
+        		replacement += settings.dddSeparator;
+        		replacement += '$2';
+        		replacement += settings.numberSeparator;
+        		replacement += '$3';
+        		
             	// Coloca hífen e parênteses quando o número possui DDD
-            	maskedPhone = fone.replace(/(\d{2})?(\d{4}|\d{5})(\d{4})$/g, '($1)$2-$3')
+            	maskedPhone = fone.replace(/(\d{2})?(\d{4}|\d{5})(\d{4})$/g, replacement);
             }
             
             return maskedPhone;
