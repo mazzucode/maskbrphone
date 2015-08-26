@@ -23,21 +23,21 @@
         };
 
         var applyMask = function(input) {
-
+        	
             var fone = input
                     .replace(/\D/g, '') // Remove tudo o que não for dígito
-                    .substring(0, 9); // Limita em 9 caracteres;
-
+                    .substring(0, 11); // Limita em 11 caracteres;
+            
             var maskedPhone;
-
-            if (fone.length <= 8) {
-                // Coloca hífen entre o quarto e o quinto dígito
-                maskedPhone = fone.replace(/(\d{4})(\d{1,4})/, '$1-$2');
-            } else {
-                // Coloca hífen entre o quinto e o sexto dígito
-                maskedPhone = fone.replace(/(\d{5})(\d{1,4})/, '$1-$2');
+            
+            if (fone.length <= 9) {
+                // Coloca hífen quando o número NÃO possui DDD
+                maskedPhone = fone.replace(/(\d{4}|\d{5})(\d{1,4})$/g, '$1-$2');
+        	} else {
+            	// Coloca hífen e parênteses quando o número possui DDD
+            	maskedPhone = fone.replace(/(\d{2})?(\d{4}|\d{5})(\d{4})$/g, '($1)$2-$3')
             }
-
+            
             return maskedPhone;
         };
 
