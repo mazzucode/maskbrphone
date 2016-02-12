@@ -26,17 +26,24 @@
 
             var fone = input
                     .replace(/\D/g, '') // Remove tudo o que não for dígito
-                    .substring(0, 9); // Limita em 9 caracteres;
+                    .substring(0, 11); // Limita em 11 caracteres (com prefixo local);
 
-            var maskedPhone;
+            // numero: 1199998888
+            var prefixLimit  = fone.length <= 10 ? 6 : 7,
+            	prefixLength = fone.length <= 10 ? 4 : 5,
+            	ddd     = fone.substring(0, 2),
+            	prefix  = fone.substring(2, prefixLimit),
+            	suffix  = fone.substring(prefixLimit, fone.length);
 
-            if (fone.length <= 8) {
-                // Coloca hífen entre o quarto e o quinto dígito
-                maskedPhone = fone.replace(/(\d{4})(\d{1,4})/, '$1-$2');
-            } else {
-                // Coloca hífen entre o quinto e o sexto dígito
-                maskedPhone = fone.replace(/(\d{5})(\d{1,4})/, '$1-$2');
-            }
+        	if(ddd.length == 2) {
+        		ddd += ') ';
+        	}
+
+        	if(prefix.length == prefixLength) {
+        		prefix += '-';
+        	}
+
+            var maskedPhone = fone.length?'('+ddd+prefix+suffix:'';
 
             return maskedPhone;
         };
