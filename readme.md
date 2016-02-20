@@ -2,16 +2,14 @@
 
 Plugin jQuery que mascara telefones com nove e oito dígitos. Principais caracterísicas:
 
-- Compatível com dispositivos mobile
 - É possível configurar se o usuário deve ou não digitar o DDD
 - Reconhece automaticamente telefones celulares com o nono dígito
+- Compatível com dispositivos mobile
 - Permite a personalização dos separadores
 
 Colaborações serão bem-vindas!
 
-
 ### Exemplos de utilização
-
 
 #### HTML
 
@@ -19,9 +17,7 @@ Colaborações serão bem-vindas!
 <input type="text" class="celular" />
 ```
 
-
 #### Javascript
-
 
 ##### Forma mais simples de utilização
 
