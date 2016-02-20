@@ -29,7 +29,7 @@ $('.telefone').maskbrphone();
 ##### Personalizando o funcionameno do plugin
 
 ```javascript
-$('.celular').maskbrphone({  
+$('.telefone').maskbrphone({  
     useDdd           : false, // Define se o usuário deve digitar o DDD  
     useDddParenthesis: true,  // Informa se o DDD deve estar entre parênteses  
     dddSeparator     : ' ',   // Separador entre o DDD e o número do telefone  
