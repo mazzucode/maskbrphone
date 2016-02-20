@@ -6,6 +6,7 @@ Plugin jQuery que mascara telefones com nove e oito dígitos. Principais caracte
 - Reconhece automaticamente telefones celulares com o nono dígito
 - Compatível com dispositivos mobile
 - Permite a personalização dos separadores
+- Extremamente pequeno, apenas 1Kb
 
 Colaborações serão bem-vindas!
 
