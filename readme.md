@@ -10,7 +10,7 @@ Plugin jQuery que mascara telefones com nove e oito dígitos. Principais caracte
 
 Colaborações serão bem-vindas!
 
-### Forma de utilização
+### Exemplos de utilização
 
 [Acesse este link para ver o funcionamento (demo) do plugin](https://jsfiddle.net/masimao/ovnhpsww)
 
