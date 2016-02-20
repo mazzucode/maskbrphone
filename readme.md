@@ -1,5 +1,4 @@
 # maskbrphone
-===========
 
 Plugin jQuery que mascara telefones com nove e oito dígitos. Principais caracterísicas:
 
@@ -12,7 +11,6 @@ Colaborações serão bem-vindas!
 
 
 ### Exemplos de utilização
-======================
 
 
 #### HTML
@@ -30,7 +28,6 @@ Colaborações serão bem-vindas!
 ```javascript
 $('.celular').maskbrphone();
 ```
-
 
 ##### Personalizando o funcionameno do plugin
 
