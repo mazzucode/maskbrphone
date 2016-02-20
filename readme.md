@@ -3,6 +3,7 @@ maskbrphone
 
 Plugin jQuery que mascara telefones com nove e oito dígitos. Principais caracterísicas:
 
+- Compatível com dispositivos mobile
 - É possível configurar se o usuário deve ou não digitar o DDD
 - Reconhece automaticamente telefones celulares com o nono dígito
 - Permite a personalização dos separadores
@@ -25,8 +26,8 @@ Forma mais simples de utilização
 Personalizando o funcionameno do plugin
 
 `$('.celular').maskbrphone({
-    useDdd: true,
-    useDddParenthesis: true,
-    dddSeparator: ' ',
-    numberSeparator: '-'
+    useDdd           : true, // Define se o usuário deve digitar o DDD
+    useDddParenthesis: true, // Informa se o DDD deve estar entre parênteses
+    dddSeparator     : ' ',  // Separador entre o DDD e o número do telefone
+    numberSeparator  : '-'   // Caracter que separa o prefixo e o sufixo do telefone
 });`
