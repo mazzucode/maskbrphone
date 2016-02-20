@@ -15,7 +15,7 @@ Colaborações serão bem-vindas!
 #### HTML
 
 ```html
-<input type="text" class="celular" />
+<input type="text" class="telefone" />
 ```
 
 #### Javascript
@@ -23,7 +23,7 @@ Colaborações serão bem-vindas!
 ##### Forma mais simples de utilização
 
 ```javascript
-$('.celular').maskbrphone();
+$('.telefone').maskbrphone();
 ```
 
 ##### Personalizando o funcionameno do plugin
