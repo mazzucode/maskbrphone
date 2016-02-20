@@ -12,6 +12,8 @@ Colaborações serão bem-vindas!
 
 ### Forma de utilização
 
+[Acesse este link para ver o funcionamento (demo) do plugin](https://jsfiddle.net/masimao/ovnhpsww)
+
 #### HTML
 
 ```html
