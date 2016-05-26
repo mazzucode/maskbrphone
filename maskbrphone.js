@@ -35,7 +35,7 @@
                 return '';
             }
 
-            var fone = input.replace(/\D/g, ''); // Remove tudo o que não for dígito;
+            var fone = input.replace(/\D/g, ''); // Remove tudo o que não for dígito
 
             var ddd = '',
                 prefix,
