@@ -41,20 +41,17 @@
                 prefix,
                 suffix;
 
-            if ( ! settings.useDdd && input.charAt(0) === '9') {
+            if (settings.useDdd) {
+                ddd = fone.substring(0, 2);
+                fone=fone.substring(2);
+            }
+            
+            if(fone.length<=8){
+                prefix = fone.substring(0, 4);
+                suffix = fone.substring(4, 8);    
+            }else{
                 prefix = fone.substring(0, 5);
                 suffix = fone.substring(5, 9);
-            } else if (settings.useDdd && input.charAt(5) === '9') {
-                ddd = fone.substring(0, 2);
-                prefix = fone.substring(2, 7);
-                suffix = fone.substring(7, 11);
-            } else if ( ! settings.useDdd && input.charAt(0) !== '9') {
-                prefix = fone.substring(0, 4);
-                suffix = fone.substring(4, 8);
-            } else if (settings.useDdd && input.charAt(5) !== '9') {
-                ddd = fone.substring(0, 2);
-                prefix = fone.substring(2, 6);
-                suffix = fone.substring(6, 10);
             }
 
             if (settings.useDdd) {
